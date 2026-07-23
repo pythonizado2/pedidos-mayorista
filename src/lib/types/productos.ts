@@ -10,3 +10,21 @@ export interface Producto {
 	activo: boolean;
 	fecha_creacion: string;
 }
+
+export interface ProductoInsert {
+	nombre: string;
+	descripcion: string | null;
+	categoria: string | null;
+	tipo_venta: TipoVenta;
+	precio: number;
+	activo: boolean;
+}
+
+export interface ProductoUpdate {
+	nombre?: string;
+	descripcion?: string | null;
+	categoria?: string | null;
+	tipo_venta?: TipoVenta;
+	precio?: number;
+	activo?: boolean;
+}
